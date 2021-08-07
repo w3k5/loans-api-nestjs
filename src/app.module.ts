@@ -2,7 +2,7 @@ import { Module } from '@nestjs/common';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
-import ormconfig from '@app/ormconfig';
+import ormconfig from '@app/configs/ormconfig';
 @Module({
   imports: [TypeOrmModule.forRoot(ormconfig)],
   controllers: [AppController],
