@@ -10,10 +10,6 @@
     "sourceMap": true,
     "outDir": "./dist",
     "baseUrl": "./",
-    "incremental": true,
-    "paths": {
-      "@app/*": ["./src/*"],
-      "@configs/*": ["./src/configs/*"]
-    }
+    "incremental": true
   }
 }
