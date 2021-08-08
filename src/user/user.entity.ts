@@ -1,6 +1,5 @@
 import { EUserRole } from './types/user-role.type';
-import { BeforeInsert, Column, Entity, PrimaryGeneratedColumn } from 'typeorm';
-import { hash } from 'bcrypt';
+import { Column, Entity, PrimaryGeneratedColumn } from 'typeorm';
 import { ApiProperty } from '@nestjs/swagger';
 
 @Entity({ name: 'users' })
