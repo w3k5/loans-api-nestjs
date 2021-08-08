@@ -1,10 +1,10 @@
 import { ConnectionOptions } from 'typeorm';
 
-const config: ConnectionOptions = {
+const typeOrmConfig: ConnectionOptions = {
   type: 'postgres',
   host: 'localhost',
   port: 5432,
-  username: 'postgres',
+  username: process.env.POSTGRES_USER || 'postgres',
   password: '15738911',
   database: 'loans',
   entities: [__dirname + '/**/*.entity{.ts,.js}'],
@@ -15,4 +15,4 @@ const config: ConnectionOptions = {
   },
 };
 
-export default config;
+export default typeOrmConfig;
